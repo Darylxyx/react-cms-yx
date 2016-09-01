@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --content-base --port 3000 --color",
+    "start": "webpack-dev-server --inline --content-base --port 4000 --color",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Darylxyx/generator-yx#readme",
   "devDependencies": {
+    "animate.css": "^3.5.1",
     "antd": "^1.6.5",
     "babel-core": "^6.10.4",
     "babel-eslint": "^6.1.0",
@@ -30,6 +31,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
+    "react-router": "^2.6.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",

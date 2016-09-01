@@ -8,6 +8,12 @@ html, body {
 	font-family: '思源黑体简','Helvetica Neue-Light';
 }
 
+.logo {
+	width: 30%;
+	margin: 20px auto;
+	display: block;
+}
+
 /*Sider*/
 #leftMenu {
 	position: absolute;
@@ -24,5 +30,14 @@ html, body {
 	left: 200px;
 	right: 0;
 	bottom: 0;
-	background-color: #f3f3f3;	
+	background-color: #fff;	
+	overflow: hidden;
+	padding: 0 10px 0 20px;
+}
+
+#rightWrap .right-title {
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #e9e9e9;
+	margin-bottom: 20px;
 }
