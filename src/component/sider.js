@@ -10,7 +10,11 @@ class Sider extends Component {
 	render() {
 		return (<div>
 					<div id='leftMenu'>
-						<img className='logo' src='/src/images/logo.png' />
+						<div className='logo'>
+							<div className='cover'>
+								<img width='100%' src={require('../images/logo.png')} />
+							</div>
+						</div>
 						<Menu theme='dark'
 							mode='inline'
 							defaultOpenKeys={['func', 'setting']}

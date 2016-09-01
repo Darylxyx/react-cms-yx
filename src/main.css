@@ -9,9 +9,32 @@ html, body {
 }
 
 .logo {
-	width: 30%;
+	width: 55px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 140%;
+	background-image: url(https://t.alipayobjects.com/images/rmsweb/T1B9hfXcdvXXXXXXXX.svg);
 	margin: 20px auto;
 	display: block;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.cover {
+	width: 100%;
+	background-color: #333;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.logo:hover {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.logo:hover .cover {
+	opacity: 0;
 }
 
 /*Sider*/
