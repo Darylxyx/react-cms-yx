@@ -1,9 +1,14 @@
 import React from 'react';
-import { Form, Input, Radio, Checkbox, Select, DatePicker, Switch, Upload, Button, Icon, Col } from 'antd';
+import { Form, Input, Radio, Checkbox, Select, DatePicker, Switch, Upload, Button, Icon, Col, message, Modal } from 'antd';
 
 const FormItem = Form.Item;
 const RadioGroup = Radio.Group;
 const Option = Select.Option;
+
+const formItemLayout = {
+    labelCol: { span: 3 },
+    wrapperCol: { span: 6 }
+}
 
 class myForm extends React.Component {
 
@@ -11,16 +16,23 @@ class myForm extends React.Component {
         super(props)
     }
 
+    handlerSubmit = (e) => {
+    	message.success('操作成功');
+    }
+
+    showModal = (e) => {
+    	Modal.info({
+			title: '这是一条通知信息',
+			content: '一些附加信息一些附加信息一些附加信息',
+			onOk() {
+				console.log('Confirm the modal');
+			}
+		});
+    }
+
 	render() {
 
-		// const { getFieldProps } = this.props.form;
-
-		const formItemLayout = {
-            labelCol: { span: 3 },
-            wrapperCol: { span: 6 }
-        }
-
-		return (<Form horizontal>
+		return (<Form horizontal onSubmit={this.handlerSubmit}>
 					<FormItem
 						id='control-input'
 						label='输入框'
@@ -104,7 +116,8 @@ class myForm extends React.Component {
 			          	</Upload>
 			        </FormItem>
 			        <FormItem wrapperCol={{offset: 3}} style={{ marginTop: 24 }}>
-         			 	<Button type="primary" htmlType="submit">确定</Button>
+         			 	<Button type='primary' htmlType='submit'>确定</Button>
+         			 	<Button onClick={this.showModal} type='ghost' style={{marginLeft:'20px'}}>点击有提示</Button>
         			</FormItem>
 				</Form>);
 	}
