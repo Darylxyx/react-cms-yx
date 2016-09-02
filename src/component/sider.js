@@ -22,8 +22,8 @@ class Sider extends Component {
 							<SubMenu key='func' title={<span><Icon type="appstore" />功能</span>}>
 								<MItem key='form'><IndexLink to='/'>表单</IndexLink></MItem>
 								<MItem key='chart'><Link to='/chart'>图表</Link></MItem>
-								<MItem key='table'>表格</MItem>
-								<MItem key='calendar'>日历</MItem>
+								<MItem key='table'><Link to='/table'>表格</Link></MItem>
+								<MItem key='calendar'><Link to='/calendar'>日历</Link></MItem>
 							</SubMenu>
 							<SubMenu key='setting' title={<span><Icon type="setting" />设置</span>}>
 								<MItem key='style'>风格</MItem>
@@ -33,7 +33,9 @@ class Sider extends Component {
 					</div>
 					<div id='rightWrap'>
 						<div className='right-title'></div>
-						{this.props.children}
+						<div className='right-box'>
+							{this.props.children}
+						</div>
 					</div>
 				</div>);
 	}

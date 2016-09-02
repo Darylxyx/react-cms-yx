@@ -8,11 +8,15 @@ html, body {
 	font-family: '思源黑体简','Helvetica Neue-Light';
 }
 
+table {
+	font-size: 13px;
+}
+
 .logo {
 	width: 55px;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 140%;
+	background-size: 135%;
 	background-image: url(https://t.alipayobjects.com/images/rmsweb/T1B9hfXcdvXXXXXXXX.svg);
 	margin: 20px auto;
 	display: block;
@@ -54,7 +58,6 @@ html, body {
 	right: 0;
 	bottom: 0;
 	background-color: #fff;	
-	overflow: hidden;
 	padding: 0 10px 0 20px;
 }
 
@@ -63,4 +66,16 @@ html, body {
 	height: 80px;
 	border-bottom: 1px solid #e9e9e9;
 	margin-bottom: 20px;
+}
+
+#rightWrap .right-box {
+	box-sizing: border-box;
+	padding: 20px 20px 0;
+	position: absolute;
+	top: 81px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+
 }
