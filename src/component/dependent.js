@@ -10,6 +10,7 @@ class myDependent extends React.Component {
 							<p>· React</p>
 							<p>· React-router</p>
 							<p>· Antd</p>
+							<p>· Webpack</p>
 							<p>· Highcharts</p>
 						</Col>
 					</Row>
