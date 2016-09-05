@@ -77,5 +77,73 @@ table {
 	right: 0;
 	bottom: 0;
 	overflow-y: auto;
+}
 
+.dependent {
+	font-size: 14px;
+}
+
+.dependent h1 {
+	margin-bottom: 10px;
+}
+
+.dependent p {
+	margin: 5px 0;
+}
+
+.about {
+	text-align: center;
+	font-size: 14px;
+}
+
+.about img {
+	margin: 50px 0 20px 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+.active img {
+	-webkit-transition: all ease-out 0.5s;
+	transition: all ease-out 0.5s;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.about h2 {
+	margin-bottom: 10px;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+.active h2 {
+	-webkit-transition: all ease-out 0.5s 0.1s;
+	transition: all ease-out 0.5s 0.1s;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.about a {
+	display: block;
+	margin-bottom: 5px;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+.active a {
+	-webkit-transition: all ease-out 0.5s 0.2s;
+	transition: all ease-out 0.5s 0.2s;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
 }

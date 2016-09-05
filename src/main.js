@@ -11,6 +11,8 @@ import myForm from './component/form.js';
 import myChart from './component/chart.js';
 import myTable from './component/table.js';
 import myCalendar from './component/calendar.js';
+import myDependent from './component/dependent.js';
+import myAbout from './component/about.js';
 
 ReactDom.render(<Router history={hashHistory}>
 					<Route path='/' component={mySider}>
@@ -18,5 +20,7 @@ ReactDom.render(<Router history={hashHistory}>
 						<Route path='chart' component={myChart} />
 						<Route path='table' component={myTable} />
 						<Route path='calendar' component={myCalendar} />
+						<Route path='dependent' component={myDependent} />
+						<Route path='about' component={myAbout} />
 					</Route>
 				</Router>, document.querySelector('.container'));

@@ -26,8 +26,8 @@ class Sider extends Component {
 								<MItem key='calendar'><Link to='/calendar'>日历</Link></MItem>
 							</SubMenu>
 							<SubMenu key='setting' title={<span><Icon type="setting" />设置</span>}>
-								<MItem key='style'>风格</MItem>
-								<MItem key='about'>关于</MItem>
+								<MItem key='style'><Link to='/dependent'>依赖</Link></MItem>
+								<MItem key='about'><Link to='/about'>关于</Link></MItem>
 							</SubMenu>
 						</Menu>
 					</div>
