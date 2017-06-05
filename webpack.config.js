@@ -23,10 +23,6 @@ module.exports = {
 			}
 		]
 	},
-	{
-		"presets": ["es2015", "react", "stage-0"],
-		"plugins": [["antd", { "libraryName": "antd", "style": "css" }]]
-	}
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env': {
